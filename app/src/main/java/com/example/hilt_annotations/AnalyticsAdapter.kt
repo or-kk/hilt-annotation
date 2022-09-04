@@ -1,9 +1,9 @@
 package com.example.hilt_annotations
 
+import dagger.hilt.android.scopes.ActivityScoped
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class MainAdapter @Inject constructor(
+@ActivityScoped
+class AnalyticsAdapter @Inject constructor(
     private val mainService: MainService
 ) { }

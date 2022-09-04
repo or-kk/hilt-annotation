@@ -1,3 +1,7 @@
 package com.example.hilt_annotations
 
-class MainAdapter{}
+import javax.inject.Inject
+
+class MainAdapter @Inject constructor(
+    private val mainService: MainService
+) { }
